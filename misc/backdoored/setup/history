@@ -1,0 +1,6 @@
+id
+whoami
+cat /etc/passwd
+echo "echo 'TACYERG WAS HERE'" >> ~/.bashrc
+vim /tmp/secret/.evil.sh
+exit

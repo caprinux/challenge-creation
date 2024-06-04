@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  pwn:
+    build: .
+    privileged: true
+    container_name: filelen
+    ports:
+      - "21235:5000"
