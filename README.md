@@ -43,3 +43,11 @@ The target audience for this CTF is local and international university students.
 |6| Pwn | Poopoo Pants | linux userland heap, FSOP to bypass ASLR followed by ROP to ret2libc |
 |7| Pwn | Sanity Check | simple kernel ret2usr, flag is stored in memory and deleted. egghunting in kernel to find the flag |
 |6| Rev | Mazeware | small snippet of assembly that cannot be seen via the decompiler calls into a shellcode which hooks into the GOT to hijack inputs into a hidden maze that will decrypt the flag |
+
+## [R3KAPIG CTF](https://ctftime.org/event/2273)
+
+As part of r3kapig, I contributed a single pwn challenge to the CTF.
+
+| Difficulty (1-10) | Category | Challenge Name | Description |
+| - | - | - | - |
+|6| Pwn | Feedback Portal | wasm heap UAF/overflow as a result of `realloc`. unsafe unlink attack to overwrite stdout file structure to call another function in `_stdio_exit` |
