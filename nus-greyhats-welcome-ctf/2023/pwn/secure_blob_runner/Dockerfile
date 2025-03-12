@@ -1,0 +1,9 @@
+FROM pwn.red/jail
+COPY --from=ubuntu / /srv
+
+RUN mkdir /srv/app
+ADD ./app/chall /srv/app/run
+ADD ./app/flag.txt /srv/app/flag.txt
+ADD ./app/libseccomp.so.2 /srv/app/libseccomp.so.2
+
+ENV JAIL_TIME 60

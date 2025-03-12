@@ -1,0 +1,38 @@
+author: Jin Kai
+category: Pwn
+connection_info: nc challs.nusgreyhats.org 32831
+description: 'Buffer overflow is a simple vulnerability where a flaw in the program
+  allows you to overflow an allocated buffer in memory.
+
+
+  However, the tricky question is -- given a buffer overflow, what can we actually
+  do with it?
+
+
+  How can we go from a buffer overflow in the stack memory to getting remote code
+  execution?
+
+
+  p.s.
+
+
+  For the best experience, you can test the challenge locally by running `bash run.sh`.
+
+
+  You can attempt the challenge remotely as well by running `stty -icanon -echo ;
+  nc challs.nusgreyhats.org 32831 ; stty sane`.
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+files:
+- dist-bof-school.zip
+flags:
+- grey{d1d_y0u_n0t1ce_m3m0ry_1n_l1ttl3_3nd14n_and_the_difference_between_raw_bytes_and_their_hex_representations?}
+name: "Stack BOF School \U0001F37C"
+state: visible
+type: dynamic
+value: 1000

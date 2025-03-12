@@ -88,16 +88,10 @@ This CTF contains some of the more interesting challenges that I've made.
 |5| Rev | mazeware | return address hijacking with multi stage shellcode and api hooking |
 |6| Rev | overly simplified rev challenge | obfuscated flag checker program with inlined functions, no stack memory and no `mov` instructions! |
 
-## [TISC](https://www.csit.gov.sg/events/tisc)
-
-This CTF is conducted in the same format as flare-on. This CTF lasts over 2 weeks, and each challenge unlocks the next in increasing difficulty.
-
-The target audience for this CTF is experienced cybersecurity enthusiasts/researchers in Singapore (no age limit).
-
 ## Miscellaneous CTFs
 
 | CTF | Difficulty (1-10) | Category | Challenge Name | Description |
 |- | - | - | - | - |
-| [r3kapig CTF](https://ctftime.org/event/2273) |6| Pwn | Feedback Portal | wasm heap UAF/overflow as a result of `realloc`. unsafe unlink attack to overwrite stdout file structure to call another function in `_stdio_exit` |
-| ISC2CTF | 2 | Pwn | JIGROP Puzzle | simple orw rop using a series of provided rop gadgets |
-
+| [r3kapig CTF 2024](https://ctftime.org/event/2273) |6| Pwn | Feedback Portal | wasm heap UAF/overflow as a result of `realloc`. unsafe unlink attack to overwrite stdout file structure to call another function in `_stdio_exit` |
+| [TISC 2024](https://www.csit.gov.sg/events/tisc/tisc-2024) |6| Pwn | Slay the Dragon 2 | 2024 Level 12, kernel race condition -> uaf to privesc |
+| ISC2CTF 2024 | 2 | Pwn | JIGROP Puzzle | simple orw rop using a series of provided rop gadgets |

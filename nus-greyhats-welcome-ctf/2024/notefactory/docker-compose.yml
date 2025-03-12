@@ -1,0 +1,7 @@
+services:
+    challenge:
+      container_name: misc-notefactory
+      build: service
+      read_only: true
+      ports:
+        - 32111:5000

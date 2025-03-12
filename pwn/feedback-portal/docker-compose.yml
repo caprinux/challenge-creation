@@ -1,6 +1,0 @@
-services:
-  feedback-form:
-    build: service
-    read_only: true
-    ports:
-        - 5000:5000

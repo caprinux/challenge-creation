@@ -1,0 +1,19 @@
+author: Jin Kai
+category: Pwn
+connection_info: nc challs.nusgreyhats.org 32835
+description: 'Such inspiring pasta
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+files:
+- dist-copypasta-of-the-day.zip
+flags:
+- grey{r0p3d_1n_th3_flag!}
+name: r/WholesomeCopypasta
+state: visible
+type: dynamic
+value: 1000

@@ -1,0 +1,7 @@
+services:
+    challenge:
+      container_name: pwn-wholesome-copypasta
+      build: service
+      privileged: true
+      ports:
+        - 32835:5000

@@ -1,0 +1,20 @@
+author: Jin Kai
+category: Pwn
+connection_info: nc challs.nusgreyhats.org 32834
+description: 'Doesn''t it suck that you only live once? In the all new isekai RE:LIFE
+  simulator, you get to live and relive! Isn''t that awesome?
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+files:
+- dist-re_life.zip
+flags:
+- grey{not_every_life_is_equal_you_are_one_in_eight_thousand_one_hundred_and_ninety_two!}
+name: re:life
+state: visible
+type: dynamic
+value: 1000

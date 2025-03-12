@@ -1,0 +1,7 @@
+services:
+    challenge:
+      container_name: rev-random-based-encryption
+      build: service
+      privileged: true
+      ports:
+        - 32112:5000

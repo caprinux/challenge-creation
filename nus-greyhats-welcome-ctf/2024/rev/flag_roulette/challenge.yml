@@ -1,0 +1,21 @@
+author: Jin Kai
+category: Reverse
+description: 'You have 1 in 18446744073709551615 chance of getting the flag.
+
+
+  That is, of course, unless you know how to reverse engineer :)
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+files:
+- dist-flag_roulette.zip
+flags:
+- grey{1_g0t_sup3r_dup3r_lucky_or_1m_just_pr0_r3verser}
+name: Flag Roulette
+state: visible
+type: dynamic
+value: 1000

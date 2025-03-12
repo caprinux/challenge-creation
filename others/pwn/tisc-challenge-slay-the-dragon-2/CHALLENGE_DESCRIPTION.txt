@@ -1,0 +1,13 @@
+In 2021, PALINDROME released an RPG game that we believe was secretly disguised as a recruitment campaign for them to find capable members to join their organization.
+Thankfully, with your help, we managed to defeat the game and sneak some undercover agents into PALINDROME.
+
+However, in order for our agents to obtain crucial information about the organization and their upcoming plans, we must help the agents to rise up the ranks.
+
+Except that this time there seems to be much more to it than just slaying the dragon?
+
+The new version of the game seems to feature a few changes:
+- Inventory System added
+- Offline support added (server is now built locally into the kernel!)
+- Code base revamped to be more secure (unreadable == difficult to understand == more secure)
+
+Can you, once again, help us to dig deeper and uncover PALINDROME's upcoming plans? We are counting on you agent.

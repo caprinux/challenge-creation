@@ -1,0 +1,26 @@
+# Challenge Metadata File (version 0.1)
+# This file is machine generated. DO NOT EDIT unless you know what you are doing.
+# If you want to create or edit a challenge, use chall-architect instead.
+
+version = "0.1"
+
+[challenge]
+author = "elmo"
+category = "pwn"
+description = "I was learning how to write ROP chains, but I messed up and now there are all over the place. Can you help me assemble it?"
+difficulty = "medium"
+name = "jigrop puzzle"
+files = ["dist/chall"]
+
+[challenge.extras]
+
+[[challenge.flags]]
+flag = "ISC2CTF{simple_rop_chaining_puzzle!}"
+
+[[challenge.services]]
+name = "jigrop-puzzle"
+path = "service/jigrop-puzzle"
+port = 5000
+type = "nc"
+
+[challenge.services.extras]

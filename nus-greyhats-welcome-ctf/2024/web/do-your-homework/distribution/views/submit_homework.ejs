@@ -1,0 +1,10 @@
+<h1>Submit Homework</h1>
+<p>Welcome, <%= username %>!</p>
+<% if (is_admin) { %>
+  <p>grey{TEST_FLAG}</p>
+<% } %>
+<form action="/submit_homework" method="POST">
+  <textarea name="content" rows="10" cols="50" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+<a href="/logout">Logout</a>

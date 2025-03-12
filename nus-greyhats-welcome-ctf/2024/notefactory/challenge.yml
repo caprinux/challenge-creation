@@ -1,0 +1,24 @@
+author: Jin Kai
+category: Misc
+connection_info: nc challs.nusgreyhats.org 32111
+description: '1000 notes in 10 seconds without the rythm...
+
+
+  churning out dem notes like a factory!
+
+
+  try connecting via `stty -icanon -echo ; nc localhost 32111 ; stty sane` for the
+  full interactive experience
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+flags:
+- grey{pinky_power_hehe_x123eas}
+name: notefactory
+state: visible
+type: dynamic
+value: 1000

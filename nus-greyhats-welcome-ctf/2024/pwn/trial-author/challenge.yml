@@ -1,0 +1,23 @@
+author: Jin Kai
+category: Pwn
+connection_info: nc challs.nusgreyhats.org 32931
+description: 'The famous GREYHAT book publisher would like to give you a chance to
+  publish your own book and make it book.
+
+
+  Do you have what it takes?
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+files:
+- dist-trial-author.zip
+flags:
+- grey{strcpy_my_0ne_g4dg3t}
+name: The Trial Author
+state: visible
+type: dynamic
+value: 1000

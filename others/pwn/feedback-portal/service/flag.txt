@@ -1,0 +1,1 @@
+R3CTF{stdio_exit_to_win_in_wat}

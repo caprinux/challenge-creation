@@ -1,0 +1,7 @@
+services:
+  dreamfactory:
+    container_name: pwn-dreamfactory
+    build: ./service
+    privileged: true
+    ports:
+      - 32833:5000

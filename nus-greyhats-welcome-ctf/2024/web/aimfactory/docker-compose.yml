@@ -1,0 +1,9 @@
+services:
+    challenge:
+      # <category-name>-<challenge-name>
+      container_name: web-radiant-kind-of-aim
+      build: service
+      ports:
+        # host port: container port
+        # Will be used in generation of CTFd connection info
+        - 32902:8000

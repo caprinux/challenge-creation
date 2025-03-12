@@ -1,0 +1,7 @@
+services:
+    challenge:
+      container_name: pwn-bof-school
+      build: service
+      privileged: true
+      ports:
+        - 32831:5000

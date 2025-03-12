@@ -1,0 +1,7 @@
+services:
+    challenge:
+      container_name: pwn-cowsaymoo
+      build: service
+      privileged: true
+      ports:
+        - 32839:5000

@@ -1,0 +1,19 @@
+author: Jin Kai
+category: Pwn
+connection_info: nc challs.nusgreyhats.org 32833
+description: 'Where dreams are made!
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+files:
+- dist-dreamfactory.zip
+flags:
+- grey{i_dreamt_about_the_flag_appearing_in_my_dreams}
+name: dreamfactory
+state: visible
+type: dynamic
+value: 1000

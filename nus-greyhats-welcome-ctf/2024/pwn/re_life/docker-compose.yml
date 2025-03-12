@@ -1,0 +1,7 @@
+services:
+  relife:
+    container_name: pwn-relife
+    build: ./service
+    read_only: true
+    ports:
+      - 32834:5000

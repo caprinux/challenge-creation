@@ -1,0 +1,19 @@
+" default config copied off the internet
+set rnu
+set nu
+
+set cursorline
+
+set list
+
+set tabstop=4
+set shiftwidth=4
+set ttyfast
+set undofile
+set undodir=/tmp/.vim/undo
+set autoindent
+set smarttab
+set termguicolors
+
+syntax on
+filetype plugin indent on

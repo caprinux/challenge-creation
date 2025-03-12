@@ -1,0 +1,22 @@
+author: Jin Kai
+category: Web
+connection_info: http://challs.nusgreyhats.org:32902
+description: 'Hard difficulty in the range seems to be too easy for TenZ, so I made
+  this insane difficulty!
+
+
+  1000 targets in 10 seconds, flick until your wrist unexist. Only for radiant players
+  to win :)
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+flags:
+- grey{y0u_4r3_h1m0thY_ta}
+name: "aimfactory \U0001F37C"
+state: visible
+type: dynamic
+value: 1000

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Aimlab Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="game">
+		<div id="htimer">REMAINING</div>
+        <div id="timer">10</div>
+		<div id="hscore">SCORE</div>
+        <div id="score">00</div>
+		<button id="startButton">Start</button>
+        <button id="stopButton" disabled>Stop</button>
+        <img src="{{ url_for('static', filename='target.png') }}" id="target" style="display:none;">
+    </div>
+	    <script>
+        let score = 0;
+        let timeLeft = 10;
+        let timerInterval;
+        let target = document.getElementById("target");
+        let startButton = document.getElementById("startButton");
+        let stopButton = document.getElementById("stopButton");
+
+        function moveTarget() {
+            let game = document.getElementById("game");
+            let maxX = game.clientWidth - target.width;
+            let maxY = game.clientHeight - target.height;
+
+            let randomX = Math.floor(Math.random() * maxX);
+            let randomY = Math.floor(Math.random() * maxY);
+
+            target.style.left = randomX + "px";
+            target.style.top = randomY + "px";
+        }
+
+        target.addEventListener("click", function() {
+            score += 1;
+            document.getElementById("score").innerText = String(score).padStart(2, '0');
+            moveTarget();
+        });
+
+        function startGame() {
+            score = 0;
+            timeLeft = 10;
+            document.getElementById("score").innerText = String(score).padStart(2, '0');
+            document.getElementById("timer").innerText = String(timeLeft).padStart(2, '0');
+
+            target.style.display = "block";
+            startButton.disabled = true;
+            stopButton.disabled = false;
+
+            timerInterval = setInterval(function() {
+                timeLeft--;
+				document.getElementById("timer").innerText = String(timeLeft).padStart(2, '0');
+
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    stopGame();
+                    submitScore();
+                }
+            }, 1000);
+
+            moveTarget();
+        }
+
+        function stopGame() {
+            clearInterval(timerInterval);
+            target.style.display = "none";
+            startButton.disabled = false;
+            stopButton.disabled = true;
+        }
+
+        function submitScore() {
+            fetch("/submit_score", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ score: score })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                if (data.flag) {
+                    alert("Your flag: " + data.flag);
+                }
+            });
+        }
+
+        startButton.addEventListener("click", startGame);
+        stopButton.addEventListener("click", stopGame);
+    </script>
+</body>
+</html>
+

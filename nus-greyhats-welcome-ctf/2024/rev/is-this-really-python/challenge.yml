@@ -1,0 +1,22 @@
+author: Jin Kai
+category: Reverse
+description: 'Since python is an interpreted language, there shouldn''t be a need
+  to decompile this, right??
+
+
+  Anyways, once you see the source code, cOmPrEhEnDiNg this should be easy!
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+files:
+- dist-python-but-not-really.zip
+flags:
+- grey{i_wrote_this_at_1am_and_i_have_no_idea_what_i_just_cooked}
+name: Is this really python?
+state: visible
+type: dynamic
+value: 1000

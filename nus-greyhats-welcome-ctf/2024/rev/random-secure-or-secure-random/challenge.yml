@@ -1,0 +1,28 @@
+author: Jin Kai
+category: Reverse
+connection_info: nc challs.nusgreyhats.org 32112
+description: 'I wrote this program for fun to share my super secure password.
+
+
+  It encrypted with a super secure randomly generated stream of bytes :)
+
+
+  You can''t get it right? I''m so confident that I even give the source.
+
+
+  _Unless `rand` isn''t truly random?_
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+files:
+- dist-random-based-encryption.zip
+flags:
+- grey{r4nd0m_n0t_s0_r4nd0m_owo}
+name: random secure or secure random?
+state: visible
+type: dynamic
+value: 1000

@@ -1,0 +1,14 @@
+author: elmo
+category: dojo - pwn
+connection_info: nc dojo.elmo.sg 40001
+description: Against all odds, defeat the dragon and obtain the flag!
+files:
+- dist-pwn01.zip
+flags:
+- flag{i_wonder_how_negative_integers_are_shown_in_memory?}
+hints:
+- How are negative integers expressed in memory?
+name: pwn01
+state: visible
+type: standard
+value: 101

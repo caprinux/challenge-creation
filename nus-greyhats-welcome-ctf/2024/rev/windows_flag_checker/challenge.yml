@@ -1,0 +1,18 @@
+author: Jin Kai
+category: Reverse
+description: 'This program is so simple, you could even solve it with a notepad.
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+files:
+- dist-windows_flag_checker.zip
+flags:
+- grey{str1ngs_t3lls_y0u_4l0t_4b0ut_pr0grams}
+name: "Simple Windows Flag Checker \U0001F37C"
+state: visible
+type: dynamic
+value: 1000

@@ -1,0 +1,10 @@
+services:
+    challenge:
+        container_name: web-homework-submission
+        build: deploy
+        ports:
+          - 33345:3000
+        environment:
+          - FLAG=grey{dont_hack_your_teacher_owo}
+          - JWT_SECRET=01c0e2f16ff548ebc7dc4e98b5a1cae4406930545e1f1d204896f1ac64d0
+          - ADMIN_PASSWORD=a669e4ca08d7a3dc606ebf374b2a64f8d6d71e7418ace5382114c927ee3c

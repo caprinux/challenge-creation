@@ -1,0 +1,19 @@
+author: Jin Kai
+category: Pwn
+connection_info: nc challs.nusgreyhats.org 32839
+description: 'moooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo?
+
+
+  Author: Jin Kai'
+extra:
+  decay: 100
+  initial: 1000
+  minimum: 100
+files:
+- dist-cowsaymoo.zip
+flags:
+- grey{buffer_overflowed_into_the_cow_owo}
+name: "cowsaymoo \U0001F37C"
+state: visible
+type: dynamic
+value: 1000

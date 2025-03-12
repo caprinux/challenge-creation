@@ -1,0 +1,7 @@
+services:
+    challenge:
+      container_name: pwn-trial-author
+      build: service
+      privileged: true
+      ports:
+        - 32931:5000
