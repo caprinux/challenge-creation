@@ -1,0 +1,25 @@
+name: Top Secret Portal 🩶
+author: NUS Greyhats
+category: Binary Exploitation
+connection_info: nc ico.nusgreyhats.org 33123
+description: >-
+  I found this suspicious secret agent portal, but I can't seem to find the right set of credentials to enter.
+
+
+
+  Can you help me break into the portal and somehow get access to the files within?
+
+
+
+  Author: Elma
+value: 100
+
+flags:
+- ICO{top_secret_secret_agent_access_granted_Welcome_to_Singapore!}
+
+files:
+- ./dist-secret-agent-portal.zip
+
+state: hidden
+attribution: 'Challenge by [NUS Greyhats](https://ctftime.org/team/16740/)'
+

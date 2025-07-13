@@ -1,0 +1,24 @@
+name: A Complicated Secret
+author: NUS Greyhats
+category: Reverse Engineering
+description: >-
+  I found this relic from the past and it seems to contain a mystery that I cant seem to solve.
+
+
+
+  Can you help me retrieve the secret?
+
+
+
+  Author: Elma
+value: 100
+
+flags:
+- ICO{callcallcallcallcallcallcallcallcallcallcallangrcallme}
+
+files:
+- ./dist/chall
+
+state: hidden
+attribution: 'Challenge by [NUS Greyhats](https://ctftime.org/team/16740/)'
+

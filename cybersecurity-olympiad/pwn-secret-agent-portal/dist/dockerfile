@@ -1,0 +1,9 @@
+FROM ubuntu:22.04 AS app
+
+FROM pwn.red/jail
+
+COPY --from=app / /srv
+# copy local file into docker
+COPY ./chall /srv/app/run
+# copy flag into docker if needed
+COPY ./flag.txt /srv/app/flag.txt

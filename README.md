@@ -97,6 +97,14 @@ This CTF contains some of the more interesting challenges that I've made.
 | 6 | Rev | puzzled | heavily obfusacted (control flow obfusaction, scattered instruction) program that implements a puzzle |
 | 6 | Pwn | real heap challenge | .bss OOB vulnerability exploited via spraying 2GB of heap memory to predictably access heap memory from .bss |
 
+## [International Cybersecurity Olympiad](https://ico2025.sg/)
+
+| Difficulty (1-10) | Category | Challenge Name | Description |
+| - | - | - | - |
+| 2 | Pwn | mspaint | stack oob to overwrite stack variable |
+| 3 | Rev | a complicated secret | flag checker via a set of equations that is scattered into >1000 functions |
+| 3 | Pwn | Secret Agent Portal | buffer overflow strcmp bypass, UAF to get leaks and write to libc GOT |
+
 ## Miscellaneous CTFs
 
 | CTF | Difficulty (1-10) | Category | Challenge Name | Description |

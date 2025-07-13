@@ -1,0 +1,7 @@
+services:
+  challenge:
+    container_name: pwn-secret-agent-portal
+    build: ./srv
+    privileged: true
+    ports:
+        - 33123:5000

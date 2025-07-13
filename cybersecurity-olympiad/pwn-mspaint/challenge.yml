@@ -1,0 +1,21 @@
+name: mspaint
+author: Elma
+category: Pwn
+description: |-
+  If you can't be picasso, you might as well be a hacker! (inspired by mspaint)
+
+  `wwaaaaaaaaaaaaaaaaaawowowowowowodsodsodsodsodsowowowowowodddodododododododdddododododododosososososoaoaoaoaoaoaowowowowoaaaaaaaaaaososososodododododododdddddddddddddwddddowdowdowdowaoaoaoasowaoaoaosaosdosdosdosdowxwxwxdxdxwxdxaaxssxaaxwxwxaxaxsdxddssddddddddssdododododososoaoaoaoaososodododododdddwwwwdododododososososoaoaoaoaoaowowowowodddddddddododododososoaoaoaoaososodododododdddwwwwdddddaoaoaoaoaososododododososoaoaoaoaoddddddddowwowowosss`
+
+  Author: Jin Kai
+value: 50
+
+image: ./service/
+protocol: tcp
+connection_info: nc 0.cloud.chals.io 13797
+
+flags:
+- NCO{you_managed_to_paint_and_think_out_of_the_box!}
+
+files:
+- ./dist-mspaint.zip
+attribution: Challenge by [NUS Greyhats](https://nusgreyhats.org)
