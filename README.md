@@ -60,6 +60,7 @@ The target audience for this CTF are high school students, after going through 3
 | - | - | - | - | - |
 |3| Pwn | Wordpocalypse | negative array indexing allows to overwrite GOT to ret2win | [here](https://medium.com/csit-tech-blog/cyberthon-2023-pwn-challenge-wordpocalypse-974b6708b023) |
 |3| Pwn | The Forge | simple ret2libc challenge without pop rdi, but there is a part of code that is JITed allowing you to craft your own `pop rdi` gadget | [here](https://blog.elmo.sg/posts/cyberthon-2024-the-forge-pwn/) |
+|4| Pwn | Deceitful Treasure | stack pivoting to ROP to mprotect and write egghunter shellcode to find flag in memory | - |
 
 ## [NUS Greyhats Grey Cat The Flag](https://ctf.nusgreyhats.org)
 
@@ -88,10 +89,19 @@ This CTF contains some of the more interesting challenges that I've made.
 |5| Rev | mazeware | return address hijacking with multi stage shellcode and api hooking |
 |6| Rev | overly simplified rev challenge | obfuscated flag checker program with inlined functions, no stack memory and no `mov` instructions! |
 
+### 2025
+
+| Difficulty (1-10) | Category | Challenge Name | Description |
+| - | - | - | - |
+| 4 | Rev | meow-ware | decrypt traffic of stripped-UPX-packed c2 client |
+| 6 | Rev | puzzled | heavily obfusacted (control flow obfusaction, scattered instruction) program that implements a puzzle |
+| 6 | Pwn | real heap challenge | .bss OOB vulnerability exploited via spraying 2GB of heap memory to predictably access heap memory from .bss |
+
 ## Miscellaneous CTFs
 
 | CTF | Difficulty (1-10) | Category | Challenge Name | Description |
 |- | - | - | - | - |
 | [r3kapig CTF 2024](https://ctftime.org/event/2273) |6| Pwn | Feedback Portal | wasm heap UAF/overflow as a result of `realloc`. unsafe unlink attack to overwrite stdout file structure to call another function in `_stdio_exit` |
+| [r3kapig CTF 2025](https://ctftime.org/event/2731) |4| Rev | Neon Deceit | maze generation challenge using sha256 hash of ELF in memory. obfuscated library functions by modifying dynsym metadata. see [relfuscate](https://github.com/caprinux/rel-fuscate). |
 | [TISC 2024](https://www.csit.gov.sg/events/tisc/tisc-2024) |6| Pwn | Slay the Dragon 2 | 2024 Level 12, kernel race condition -> uaf to privesc |
 | ISC2CTF 2024 | 2 | Pwn | JIGROP Puzzle | simple orw rop using a series of provided rop gadgets |

@@ -1,0 +1,8 @@
+services:
+  deceitful-treasure:
+    container_name: deceitful-treasure
+    build: .
+    privileged: true
+    ports:
+      - 5000:5000
+
