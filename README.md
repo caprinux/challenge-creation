@@ -105,6 +105,14 @@ This CTF contains some of the more interesting challenges that I've made.
 | 3 | Rev | a complicated secret | flag checker via a set of equations that is scattered into >1000 functions |
 | 3 | Pwn | Secret Agent Portal | buffer overflow strcmp bypass, UAF to get leaks and write to libc GOT |
 
+## ISC2 SG Youth Wing
+
+| CTF | Difficulty (1-10) | Category | Challenge Name | Description |
+|- | - | - | - | - |
+| ISC2CTF 2024 | 2 | Pwn | JIGROP Puzzle | simple orw rop using a series of provided rop gadgets |
+| ISC2SGYW x SIM Cybersecurity Community Cafe | 2 | Forensics | The WiFi Challenge | pcap analysis, decrypting and analyzing tcp and http/3 packets |
+| ISC2SGYW x SIM Cybersecurity Community Cafe | 1 | Forensics | File Transfer Protocol | pcap analysis, simple ftp analysis |
+
 ## Miscellaneous CTFs
 
 | CTF | Difficulty (1-10) | Category | Challenge Name | Description |
@@ -112,4 +120,3 @@ This CTF contains some of the more interesting challenges that I've made.
 | [r3kapig CTF 2024](https://ctftime.org/event/2273) |6| Pwn | Feedback Portal | wasm heap UAF/overflow as a result of `realloc`. unsafe unlink attack to overwrite stdout file structure to call another function in `_stdio_exit` |
 | [r3kapig CTF 2025](https://ctftime.org/event/2731) |4| Rev | Neon Deceit | maze generation challenge using sha256 hash of ELF in memory. obfuscated library functions by modifying dynsym metadata. see [relfuscate](https://github.com/caprinux/rel-fuscate). |
 | [TISC 2024](https://www.csit.gov.sg/events/tisc/tisc-2024) |6| Pwn | Slay the Dragon 2 | 2024 Level 12, kernel race condition -> uaf to privesc |
-| ISC2CTF 2024 | 2 | Pwn | JIGROP Puzzle | simple orw rop using a series of provided rop gadgets |
